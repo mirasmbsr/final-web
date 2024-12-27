@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цели и мечты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Life Journal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="day.html">День за днем</a>
+        <a href="goals.html" class="active">Цели и мечты</a>
+        <a href="progress.html">Мой прогресс</a>
+    </nav>
+    <main>
+        <!-- Описание страницы -->
+        <section class="page-description">
+            <h2>Цели и мечты</h2>
+            <p>На этой странице вы можете добавлять свои цели, перемещать выполненные задачи в завершённые и отслеживать прогресс их выполнения.</p>
+        </section>
+
+        <!-- Прогресс выполнения -->
+        <section class="progress-tracker block">
+            <h3>Ваш прогресс</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+            </div>
+            <p id="progress-text">0% выполнено</p>
+        </section>
+
+        <!-- Список целей -->
+        <section class="goals-list block">
+            <h3>Ваши цели</h3>
+            <ul id="goals-list">
+                <!-- Список начнётся пустым -->
+            </ul>
+            <form id="goal-form">
+                <input type="text" id="goal-input" placeholder="Добавьте новую цель">
+                <button type="button" id="add-goal-btn">Добавить цель</button>
+            </form>
+        </section>
+
+        <!-- Завершенные цели -->
+        <section class="completed-goals block">
+            <h3>Завершенные цели</h3>
+            <p>Вы достигли следующих целей:</p>
+            <ul id="completed-goals-list">
+                <!-- Завершённые цели будут добавляться сюда -->
+            </ul>
+        </section>
+    
+        <!-- Секция добавления мечт -->
+        <section class="dreams-list block">
+            <h3>Ваши мечты</h3>
+            <form id="dream-form">
+                <input type="text" id="dream-input" placeholder="Введите вашу мечту">
+                <input type="file" id="dream-image" accept="image/*">
+                <button type="button" id="add-dream-btn">Добавить мечту</button>
+            </form>
+            <ul id="dream-list">
+                <!-- Здесь будут отображаться мечты -->
+            </ul>
+        </section>
+
+
+    </main>
+
+    <script src="scripts/goals.js"></script>
+</body>ы
+</html>

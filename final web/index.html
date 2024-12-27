@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Life Journal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="day.html">День за днем</a>
+        <a href="goals.html">Цели и мечты</a>
+        <a href="progress.html">Мой прогресс</a>
+    </nav>
+    <main>
+
+        <section class="welcome-block">
+            <h2>Добро пожаловать!</h2>
+            <p>Life Journal — это ваш верный помощник в достижении целей и саморазвитии. Здесь вы можете записывать свои мысли, отслеживать прогресс и вдохновляться своими успехами. Начните свой путь к лучшей версии себя уже сегодня!</p>
+        </section>
+
+
+        <section class="overview-cards block">
+            <div class="overview-card">
+                <img src="images/image1.jpg" alt="День за днем">
+                <p><strong>День за днем:</strong> Записывайте свои мысли, цели и эмоции, чтобы улучшить свои привычки и осознанность.</p>
+            </div>
+            <div class="overview-card">
+                <img src="images/image2.jpg" alt="Цели">
+                <p><strong>Цели и мечты:</strong> Ставьте амбициозные задачи, отслеживайте прогресс и достигайте своих мечт.</p>
+            </div>
+            <div class="overview-card">
+                <img src="images/image3.jpg" alt="Прогресс">
+                <p><strong>Мой прогресс:</strong> Анализируйте успехи, создавайте графики и визуализируйте рост.</p>
+            </div>
+        </section>       
+
+
+
+        <section class="features block">
+            <h2>Почему стоит выбрать Life Journal?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Эффективность</h3>
+                    <p>Организуйте свои цели и мысли для лучшего управления временем. Используйте простые инструменты для отслеживания задач и анализа своего дня.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Удобство</h3>
+                    <p>Life Journal доступен всегда и везде. Простота интерфейса позволяет сосредоточиться на самом важном без лишних отвлечений.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Прогресс</h3>
+                    <p>Визуализируйте свои достижения, анализируйте успехи и достигайте большего благодаря встроенным инструментам анализа.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- User Form -->
+        <section class="user-form block">
+            <h2>Регистрация</h2>
+            <form>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" placeholder="Введите ваше имя">
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" placeholder="Введите ваш пароль">
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" placeholder="Введите ваш email">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Согласны ли вы получать рассылки?</label>
+                </div>
+
+                <button type="submit">ВОЙТИ</button>
+            </form>
+        </section>
+
+        <!-- Start Path Block -->
+        <section class="path-block block">
+            <p>Путешествие в тысячу миль начинается с одного шага. – Лао-цзы</p>
+            <button onclick="location.href='day.html'">Начать свой путь!</button>
+        </section>
+
+    </main>
+</body>
+</html>

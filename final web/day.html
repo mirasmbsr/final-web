@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День за днем</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Life Journal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="day.html" class="active">День за днем</a>
+        <a href="goals.html">Цели и мечты</a>
+        <a href="progress.html">Мой прогресс</a>
+    </nav>
+    <main>
+        <!-- Описание страницы -->
+        <section class="page-description">
+            <h2>День за днем</h2>
+            <p>На этой странице вы можете записывать события своего дня, оценивать эмоциональное состояние и анализировать свою активность. Используйте поля ниже, чтобы зафиксировать всё самое важное.</p>
+        </section>
+
+        <!-- Блок записи дня -->
+        <section class="daily-entry block">
+            <h3>Запишите события дня</h3>
+            <textarea id="daily-entry" placeholder="Напишите, что сегодня произошло..."></textarea>
+            <div class="hint">Подумайте о ключевых моментах, эмоциях или событиях, которые сделали этот день особенным.</div>
+        </section>
+
+        <!-- Блок эмоциональной шкалы -->
+        <section class="emotional-scale block">
+            <h3>Эмоциональная шкала</h3>
+            <input type="range" id="emotional-scale" min="1" max="10" value="5">
+            <p>Ваш уровень эмоций: <span id="emotion-value">5</span></p>
+        </section>
+
+        <!-- Секция "За что вы благодарны" -->
+        <section class="gratitude block">
+            <h3>За что вы благодарны сегодня?</h3>
+            <form id="gratitude-form">
+                <input type="text" id="gratitude-input" placeholder="Введите, за что вы благодарны">
+                <button type="button" id="add-gratitude-btn">Добавить</button>
+            </form>
+            <ul id="gratitude-list">
+                <!-- Здесь будут отображаться добавленные записи благодарности -->
+            </ul>
+        </section>
+
+
+        <!-- Секция "To-Do List" -->
+        <section class="todo-list block">
+            <h3>To-Do List</h3>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Введите задачу">
+                <button type="button" id="add-todo-btn">Добавить</button>
+            </form>
+            <ul id="todo-items">
+                <!-- Здесь будут отображаться задачи -->
+            </ul>
+        </section>
+
+
+
+        <!-- Кнопка перехода -->
+        <section class="next-step block">
+            <button onclick="location.href='goals.html'">Сохранить и продолжить</button>
+        </section>
+    </main>
+    <script src="scripts/day.js"></script>
+</body>
+</html>

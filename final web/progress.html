@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой прогресс</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Life Journal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="day.html">День за днем</a>
+        <a href="goals.html">Цели и мечты</a>
+        <a href="progress.html" class="active">Мой прогресс</a>
+    </nav>
+    <main>
+        <!-- Описание страницы -->
+        <section class="page-description">
+            <h2>Мой прогресс</h2>
+            <p>На этой странице вы можете увидеть свою статистику, графики активности и достижения.</p>
+        </section>
+
+        <!-- График эмоций -->
+        <section class="emotions-chart block">
+            <h3>График эмоций</h3>
+            <canvas id="emotions-chart" width="800" height="400"></canvas>
+        </section>
+
+        <!-- Статистика целей -->
+        <section class="goals-stats block">
+            <h3>Статистика целей</h3>
+            <div class="stats-container">
+                <div class="stat">
+                    <h4>Завершено</h4>
+                    <p id="completed-goals-stat">0</p>
+                </div>
+                <div class="stat">
+                    <h4>В процессе</h4>
+                    <p id="ongoing-goals-stat">0</p>
+                </div>
+                <div class="stat">
+                    <h4>Всего</h4>
+                    <p id="total-goals-stat">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements block">
+            <h3>Ваши достижения</h3>
+            <div class="achievement-list">
+                <div class="achievement">
+                    <img src="images/medal.png" alt="Медаль">
+                    <p>Выполнено 5 целей</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/medal.png" alt="Медаль">
+                    <p>Заполнено 7 дней подряд</p>
+                </div>
+                <div class="achievement">
+                    <img src="images/medal.png" alt="Медаль">
+                    <p>Достигнута долгосрочная цель</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Обратная связь -->
+        <section class="feedback block">
+            <h3>Обратная связь</h3>
+            <form id="feedback-form">
+                <textarea placeholder="Ваши предложения или комментарии..." rows="4"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/progress.js"></script>
+</body>
+</html>
